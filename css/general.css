@@ -1,0 +1,43 @@
+body {
+    background-image: url(/photos/home/background.png);
+    
+    background-size: 100% 100%;
+
+}
+
+@media screen and (min-width:580px) {
+    #carselaImg {
+        height: 93vh;
+        width: 100%;
+    }
+
+    #logosIMG {
+        height: 18vh;
+        width: 40%;
+    }
+    #logosIMG1{
+        height: 18vh;
+        width: 28%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    #carselaImg {
+        height: 93vh;
+        width: 100%;
+    }
+
+    #dcVSmarvel {
+        height: 93vh;
+        width: 100%;
+    }
+
+    #logosIMG {
+        height: 15vh;
+        width: 40%;
+    }
+    #logosIMG1{
+        height: 15vh;
+        width: 40%;
+    }
+}

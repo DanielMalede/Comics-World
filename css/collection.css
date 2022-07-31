@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #FFCDD2;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+.wrapper .card{
+    width: 300px;
+    height: 300px;
+    border: none;
+    box-shadow: 10px 10px 15px #1f1f1f1a,
+                -10px -10px 15px #1f1f1f1a;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transition: all 0.9s;
+    border-radius: 0px;
+}
+
+.wrapper .card:hover{
+    transform: translateY(50%);
+    border: none;
+}
+
+.wrapper .card .img-container{
+    z-index: 1;
+    transform-style: preserve-3d;
+    transform-origin: top;
+    background-color: #000;
+    transition: all 0.9s;
+    box-shadow: 10px 10px 15px #1f1f1f1a,
+                -10px -10px 15px #1f1f1f1a;
+}
+
+.wrapper .card:hover .img-container{
+    transform: rotateX(180deg);
+}
+
+.wrapper .card .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.wrapper .card .img-container img:nth-child(2){
+    transform: rotateX(-180deg);
+}
+
+.wrapper .card .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.wrapper .card .box .inner-content .tag{
+    font-size: 0.87rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width:330px) {
+    .wrapper .card{
+        width: 290px;
+        height: 290px;
+    }
+}
