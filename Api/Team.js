@@ -24,8 +24,7 @@ function printusersinfo() {
         <li class="list-group-item">Email: ${item.email}</li>
         <li class="list-group-item">Phone: ${item.phone}</li>
       </ul>
-    </div>
-`;
+    </div>`;
         })
     );
 }
