@@ -9,7 +9,7 @@ async function getComics() {
  let respo=await fetch('https://books39.p.rapidapi.com/CZFA4F/books', options)
 return respo.json();
 }
-
+console.log(getComics());
 const imgComics = [
     `1.jpg`,
     `2.jpg`,
