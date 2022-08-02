@@ -14,44 +14,44 @@
     <link rel="stylesheet" href="../css/general.css">
     <title>Document</title>
 </head>
+<!-- <body onload="printComics()"> -->
 
-<body onload="printComics()">
-    <nav class="navbar navbar-expand-lg p-md-4">
-        <div class="container-fluid ">
-            <a class="navbar-brand " href="../index.html">Navbar</a>
-            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
-                <div class="navbar-nav ">
-                    <a class="nav-link active text-white px-md-5" aria-current="page" href="../index.html">
-                        <h3>Home</h3>
-                    </a>
-                    <a class="nav-link text-white px-md-5" href="../pages/Comics.html">
-                        <h4>Top Comics</h4>
-                    </a>
-                    <a class="nav-link text-white px-md-5" href="../pages/collection.html">
-                        <h4>collection</h4>
-                    </a>
-                    <a class="nav-link text-white px-md-5" href="../pages/Team.html">
-                        <h4>Our Team</h4>
-                    </a>
-                    <a class="nav-link text-white px-md-5" href="../pages/about.html">
-                        <h4>about</h4>
-                    </a>
-                    <a onload="printComics()" class="nav-link text-white px-md-5" href="../pages/contact.html">
-                        <h4>Contact</h4>
-                    </a>
+<body>
+    <div class="container-fluid text-center mt-md-5">
+        <nav class="navbar navbar-expand-lg p-md-4 bg-white">
+            <div class="container-fluid ">
+                <a class="navbar-brand " href="../index.html"><img src="../photos/Logo/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link active text-white px-md-5" aria-current="page" href="../index.html">
+                        </a>
+                        <a class="nav-link text-black px-md-5" href="../pages/Comics.html">
+                            <h4>Top Comics</h4>
+                        </a>
+                        <a class="nav-link text-black px-md-5" href="../pages/collection.html">
+                            <h4>collection</h4>
+                        </a>
+                        <a class="nav-link text-black px-md-5" href="../pages/Team.html">
+                            <h4>Our Team</h4>
+                        </a>
+                        <a class="nav-link text-black px-md-5" href="../pages/about.html">
+                            <h4>about</h4>
+                        </a>
+                        <a class="nav-link text-black px-md-5" href="../pages/contact.html">
+                            <h4>Contact</h4>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
-    <div class="container text-center">
-        <h2 class="text-white">Top Comics In history</h2>
-        <div id="ComicsBooks" class="row justify-content-around d-flex">
+        </nav>
+        <div id="ComicsBooks" class="row justify-content-around d-flex bg-white pt-5">
+            <h2 class="">Top Comics In history</h2>
+            <div id="loadingGif"></div>
         </div>
     </div>
 

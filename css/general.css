@@ -1,6 +1,8 @@
 body {
-background-color: black;    
+/* background-color: black;     */
+background-image: url(../photos/home/background.png);
     background-size: 100% 100%;
+    background-attachment: fixed;
 
 }
 

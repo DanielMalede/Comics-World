@@ -14,51 +14,66 @@
   <link rel="stylesheet" href="./css/general.css">
   <title>Document</title>
 </head>
-
 <body>
-<nav class="navbar navbar-expand-lg p-md-4">
-  <div class="container-fluid ">
-      <a class="navbar-brand " href="/index.html">Navbar</a>
-      <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
-          <div class="navbar-nav ">
-              <a class="nav-link active text-white px-md-5" aria-current="page" href="/index.html">
-                  <h3>Home</h3>
-              </a>
-              <a class="nav-link text-white px-md-5" href="./pages/Comics.html">
-                  <h4>Top Comics</h4>
-              </a>
-              <a class="nav-link text-white px-md-5" href="./pages/collection.html">
-                  <h4>collection</h4>
-              </a>
-              <a class="nav-link text-white px-md-5" href="./pages/Team.html">
-                  <h4>Our Team</h4>
-              </a>
-              <a class="nav-link text-white px-md-5" href="./pages/about.html">
-                  <h4>about</h4>
-              </a>
-              <a class="nav-link text-white px-md-5" href="./pages/contact.html">
-                  <h4>Contact</h4>
-              </a>
+  <main class="container-fluid-sm container-md mt-md-5">
+    <nav class="navbar navbar-expand-lg p-md-4 bg-white">
+      <div class="container-fluid ">
+          <a class="navbar-brand " href="/index.html"><img src="../photos/Logo/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
+              <div class="navbar-nav ">
+                  <a class="nav-link active text-white px-md-5" aria-current="page" href="./index.html">
+                  </a>
+                  <a class="nav-link text-black px-md-5" href="./pages/Comics.html">
+                      <h4>Top Comics</h4>
+                  </a>
+                  <a class="nav-link text-black px-md-5" href="./pages/collection.html">
+                      <h4>collection</h4>
+                  </a>
+                  <a class="nav-link text-black px-md-5" href="./pages/Team.html">
+                      <h4>Our Team</h4>
+                  </a>
+                  <a class="nav-link text-black px-md-5" href="./pages/about.html">
+                      <h4>about</h4>
+                  </a>
+                  <a class="nav-link text-black px-md-5" href="./pages/contact.html">
+                      <h4>Contact</h4>
+                  </a>
+              </div>
           </div>
       </div>
-  </div>
-</nav>
-
-  <div>
-    <img id="carselaImg" src="./photos/home/all.jpg" />
-  </div>
-  <main class="container-fluid-sm container-md">
-    <div class="row d-flex bg-black justify-content-center">
+  </nav>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="caruselaimg" src="./photos/home/carasela1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img id="caruselaimg" src="./photos/home/carasela2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img id="caruselaimg" src="./photos/home/carasela1.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="row d-flex bg-white justify-content-center">
       <div class="row p-0">
         <div id="trans1" class="col-md-6 col-sm-12 bg-dark text-center p-0 ">
           <img class="img-fluid" src="./photos/home/starwar.jpg" alt="">
         </div>
-        <div class="col-md-6 col-sm-12 text-center fst-italic lead p-0 text-white">
+        <div class="col-md-6 col-sm-12 text-center fst-italic lead p-0 text-black">
           <h1 class=" bg-gradient "><ins>Marvel Phase 5</ins></h1>
           <br>
 
@@ -99,7 +114,7 @@
         </div>
       </div>
     </div>
-    <div class="container bg-black text-center pt-5">
+    <div class="container bg-white text-center pt-5">
       <h1 class="text-white pb-4"><i>News</i></h1>
       <div class="container">
         <!-- <div><img id="dcVSmarvel" src="./photos/home/marvelVSdc.jpg" alt=""> -->
@@ -129,7 +144,7 @@
           Gotham City, Gateway and Metropolis are 3 examples.</p>
       </div>
       <div class="row justify-content-center">
-        <div class="card bg-black col-md-4" style="width: 18rem;">
+        <div class="card col-md-4" style="width: 18rem;">
           <img src="./photos/home/dcnews.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of
@@ -153,7 +168,7 @@
           So, for lack of a better word, generally speaking, a fighting battle between rosters would probably be a
           draw
           in terms of power/ strength.</div>
-        <div class="card bg-black col-md-4" style="width: 18rem;">
+        <div class="card col-md-4" style="width: 18rem;">
           <img src="./photos/home/marvelVSdc.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's

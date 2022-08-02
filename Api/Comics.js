@@ -6,8 +6,16 @@ async function getComics() {
             'X-RapidAPI-Host': 'books39.p.rapidapi.com'
         }
     };
- let respo=await fetch('https://books39.p.rapidapi.com/CZFA4F/books', options)
-return respo.json();
+    try {
+        loadingGif.innerHTML = `<img src="../photos/LoadingGif/Ripple-1s-200px.gif">`
+        let respo=await fetch('https://books39.p.rapidapi.com/CZFA4F/books', options)
+       return respo.json();
+        
+    } catch (error) { 
+    }
+    finally{
+        loadingGif.innerHTML=""
+    }
 }
 console.log(getComics());
 const imgComics = [

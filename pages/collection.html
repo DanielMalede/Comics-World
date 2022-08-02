@@ -16,46 +16,45 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg p-md-4">
-    <div class="container-fluid ">
-        <a class="navbar-brand " href="../index.html">Navbar</a>
-        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
-            <div class="navbar-nav ">
-                <a class="nav-link active text-white px-md-5" aria-current="page" href="../index.html">
-                    <h3>Home</h3>
-                </a>
-                <a class="nav-link text-white px-md-5" href="../pages/Comics.html">
-                    <h4>Top Comics</h4>
-                </a>
-                <a class="nav-link text-white px-md-5" href="../pages/collection.html">
-                    <h4>collection</h4>
-                </a>
-                <a class="nav-link text-white px-md-5" href="../pages/Team.html">
-                    <h4>Our Team</h4>
-                </a>
-                <a class="nav-link text-white px-md-5" href="../pages/about.html">
-                    <h4>about</h4>
-                </a>
-                <a class="nav-link text-white px-md-5" href="../pages/contact.html">
-                    <h4>Contact</h4>
-                </a>
+
+    <div class="container-md bg-white text-center mt-md-5 pt-3">
+      <nav class="navbar navbar-expand-lg p-md-4 bg-white">
+        <div class="container-fluid ">
+            <a class="navbar-brand " href="../index.html"><img src="../photos/Logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class="nav-link active text-white px-md-5" aria-current="page" href="../index.html">
+                    </a>
+                    <a class="nav-link text-black px-md-5" href="../pages/Comics.html">
+                        <h4>Top Comics</h4>
+                    </a>
+                    <a class="nav-link text-black px-md-5" href="../pages/collection.html">
+                        <h4>collection</h4>
+                    </a>
+                    <a class="nav-link text-black px-md-5" href="../pages/Team.html">
+                        <h4>Our Team</h4>
+                    </a>
+                    <a class="nav-link text-black px-md-5" href="../pages/about.html">
+                        <h4>about</h4>
+                    </a>
+                    <a class="nav-link text-black px-md-5" href="../pages/contact.html">
+                        <h4>Contact</h4>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
-
-    <div class="container bg-black text-center mt-5 pt-3">
-        <h1 class="text-white mt-5 mb-5 pt-4">
+    </nav>
+        <h1 class="mt-5 mb-5 pt-4">
             Search for your favorite hero to get details
         </h1>
-        <div class="container-fluid text-center w-50">
+        <div class="container-fluid text-center w-50 ">
             <div class="row">
-                <input id="searchHEROES" class="col-12 bg-black text-center text-white form-control me-2" type="search"
+                <input id="searchHEROES" class="col-12  text-center form-control me-2" type="search" placeholder="Type any hero name"
                     placeholder="Search" aria-label="Search">
                 <button onclick="printEachSuperHero()" class="col-12 btn btn-outline-info mt-5 mb-5" type="submit">Search</button>
             </div>
