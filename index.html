@@ -15,38 +15,45 @@
   <title>Document</title>
 </head>
 <body>
-  <main class="container-fluid-sm container-md mt-md-5">
-    <nav class="navbar navbar-expand-lg p-md-4 bg-white">
-      <div class="container-fluid ">
-          <a class="navbar-brand " href="/index.html"><img src="../photos/Logo/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
-              <div class="navbar-nav ">
-                  <a class="nav-link active text-white px-md-5" aria-current="page" href="./index.html">
-                  </a>
-                  <a class="nav-link text-black px-md-5" href="./pages/Comics.html">
-                      <h4>Top Comics</h4>
-                  </a>
-                  <a class="nav-link text-black px-md-5" href="./pages/collection.html">
-                      <h4>collection</h4>
-                  </a>
-                  <a class="nav-link text-black px-md-5" href="./pages/Team.html">
-                      <h4>Our Team</h4>
-                  </a>
-                  <a class="nav-link text-black px-md-5" href="./pages/about.html">
-                      <h4>about</h4>
-                  </a>
-                  <a class="nav-link text-black px-md-5" href="./pages/contact.html">
-                      <h4>Contact</h4>
-                  </a>
-              </div>
-          </div>
+  <main class=" container-md mt-md-5">
+    <div class="row"></div>
+    <nav class="navbar navbar-expand-lg navbar-collapse p-3 bg-white text-center" id="headerNav">
+      <div class="container-fluid">
+        <a class="navbar-brand d-block d-lg-none" href="#">
+          <img src="./photos/Logo/logo.png" height="80" />
+        </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4 active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4" href="./pages/collection.html">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4" href="./pages/Comics.html">Comics</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link text-black mx-4" href="/index.html">
+                <img src="./photos/Logo/logo.png" height="80" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4" href="./pages/Team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4" href="./pages/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4" href="./pages/about.html">About</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -56,7 +63,7 @@
           <img id="caruselaimg" src="./photos/home/carasela2.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img id="caruselaimg" src="./photos/home/carasela1.jpg" class="d-block w-100" alt="...">
+          <img id="caruselaimg" src="./photos/home/marvel-vs-dc.avif" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -68,10 +75,9 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="row d-flex bg-white justify-content-center">
-      <div class="row p-0">
+    <div class=" bg-white justify-content-center">
         <div id="trans1" class="col-md-6 col-sm-12 bg-dark text-center p-0 ">
-          <img class="img-fluid" src="./photos/home/starwar.jpg" alt="">
+          <img class="col-12 img-fluid" src="./photos/home/allheroes.jpg" alt="">
         </div>
         <div class="col-md-6 col-sm-12 text-center fst-italic lead p-0 text-black">
           <h1 class=" bg-gradient "><ins>Marvel Phase 5</ins></h1>
@@ -86,42 +92,22 @@
               with Ant-Man and the Wasp: Quantumania in February 2023 and ending with Thunderbolts in July 2024.
               However, what's missing from the lineup are Spider-Man: Freshman Year, X-Men '97, Marvel Zombies, or What
               If...? Season 2, most of which are set to debut in the same window as Marvel Studios' Phase 5 projects.
-
-              The graphic also left off The Guardians of the Galaxy Holiday Special, and nothing was announced about the
-              upcoming Halloween Special, either.
+              The graphic also left off The Guardians of the Galaxy Holiday Special
             </p>
           </b>
         </div>
-        <div class="col-sm-12 col-md-6 fst-italic lead text-center text-white p-0 mt-5">
-          <ins>
-            <h1 class=" bg-gradient ">Comics World</h1>
-          </ins>
-          <b>
-            <p class="px-5">
-              Faster progress and more individual attention with a customized approach to reaching your goals:
-              Focus on boxing skills, strength/circuit training, or find the optimal combination of the two.
-              Boxing-focused training stresses proper punching technique, footwork, punch combinations,
-              counter punching, defensive drills, and more.
-              If you are training for a fight or just want to hit someone (even if you don’t want to get hit
-              back), members interested in sparring can join intermittent sparring classes or organize private
-              sessions with other members at similar skill and enthusiasm levels. If you are interested in
-              controlled/instructional sparring, let us know or join our Wednesday or Sunday Sparring class.
-              <br><br>
-          </b>
-        </div>
-        <div id="trans" class="col -md-6 col-sm-12 bg-dark text-center text-light p-0 mt-5">
+        <div>
           <img class="img-fluid" src="./photos/home/comics.jpg" alt="">
         </div>
-      </div>
     </div>
-    <div class="container bg-white text-center pt-5">
-      <h1 class="text-white pb-4"><i>News</i></h1>
-      <div class="container">
-        <!-- <div><img id="dcVSmarvel" src="./photos/home/marvelVSdc.jpg" alt=""> -->
-        <h2 class="">
+  </div>
+    <div class="bg-danger text-center pt-5">
+      <h1 class="text-black pb-4"><i>News</i></h1>
+      <div>
+        <h2>
           What's the Difference Between Marvel and DC?
         </h2>
-        <p class="">When it comes to the differences between Marvel and DC, we need to address the
+        <p>When it comes to the differences between Marvel and DC, we need to address the
           similarities first.
           Many of the characters in the DC universe have a matching character of powers or similar circumstances to
           the
@@ -180,7 +166,7 @@
     </div>
     </div>
 
-    <div class="container bg-warning pb-5 text-center">
+    <div class=" bg-warning pb-5 text-center">
       <h1><i>Our supporters</i></h1>
       <div class="row text-center">
         <div class="col-md-4">

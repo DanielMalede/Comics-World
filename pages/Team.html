@@ -16,43 +16,64 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg p-md-4">
-    <div class="container-fluid ">
-        <a class="navbar-brand " href="../index.html">Navbar</a>
-        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
-            <div class="navbar-nav ">
-                <a class="nav-link active text-white px-md-5" aria-current="page" href="../index.html">
-                    <h3>Home</h3>
+    <div class="container-md bg-white text-center mt-md-5 pt-3">
+        <nav class="navbar navbar-expand-lg navbar-collapse p-3 bg-white text-center" id="headerNav">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-lg-none" href="#">
+                    <img src="../photos/Logo/logo.png" height="80" />
                 </a>
-                <a class="nav-link text-white px-md-5" href="../pages/Comics.html">
-                    <h4>Top Comics</h4>
-                </a>
-                <a class="nav-link text-white px-md-5" href="../pages/collection.html">
-                    <h4>collection</h4>
-                </a>
-                <a class="nav-link text-white px-md-5" href="../pages/Team.html">
-                    <h4>Our Team</h4>
-                </a>
-                <a class="nav-link text-white px-md-5" href="../pages/about.html">
-                    <h4>about</h4>
-                </a>
-                <a class="nav-link text-white px-md-5" href="../pages/contact.html">
-                    <h4>Contact</h4>
-                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="nav-item">
+                            <a id="underLineNAV" class="nav-link text-black mx-4 active" aria-current="page"
+                                href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="underLineNAV" class="nav-link text-black mx-4"
+                                href="../pages/collection.html">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="underLineNAV" class="nav-link text-black mx-4" href="../pages/Comics.html">Comics</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link text-black mx-4" href="../index.html">
+                                <img src="../photos/Logo/logo.png" height="80" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="underLineNAV" class="nav-link text-black mx-4" href="../pages/Team.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="underLineNAV" class="nav-link text-black mx-4"
+                                href="../pages/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="underLineNAV" class="nav-link text-black mx-4" href="../pages/about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
-</nav>
+        </nav>
+        <div id="loading"></div>
+        <div class="container bg-white">
+            <div class=" row justify-content-around" id="teamCard">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-10 col-xl-8 text-center">
+                      <h3 class="mb-4">Reviews</h3>
+                      <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                        numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+                        quisquam eum porro a pariatur veniam.
+                      </p>
+                    </div>
+                  </div>
 
-    <div id="loading"></div>
-    <div class="container bg-black">
-        <div class=" row justify-content-around" id="teamCard">
-
+            </div>
         </div>
     </div>
 

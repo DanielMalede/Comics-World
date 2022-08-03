@@ -2,99 +2,120 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/contact.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <title>Document</title>
 </head>
 
 <body>
-  <div id="widthInfo" class="container bg-white px-md-5 text-sm-start text-center pb-5 mt-md-5">
-    <nav class="navbar navbar-expand-lg p-md-4 bg-white">
-      <div class="container-fluid ">
-          <a class="navbar-brand " href="../index.html"><img src="../photos/Logo/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
-              <div class="navbar-nav ">
-                  <a class="nav-link active text-white px-md-5" aria-current="page" href="../index.html">
-                  </a>
-                  <a class="nav-link text-black px-md-5" href="../pages/Comics.html">
-                      <h4>Top Comics</h4>
-                  </a>
-                  <a class="nav-link text-black px-md-5" href="../pages/collection.html">
-                      <h4>collection</h4>
-                  </a>
-                  <a class="nav-link text-black px-md-5" href="../pages/Team.html">
-                      <h4>Our Team</h4>
-                  </a>
-                  <a class="nav-link text-black px-md-5" href="../pages/about.html">
-                      <h4>about</h4>
-                  </a>
-                  <a class="nav-link text-black px-md-5" href="../pages/contact.html">
-                      <h4>Contact</h4>
-                  </a>
-              </div>
-          </div>
+  <div id="widthInfo" class="container-md bg-white text-center mt-md-5 pt-3">
+    <nav class="navbar navbar-expand-lg navbar-collapse p-3 bg-white" id="headerNav">
+      <div class="container-fluid">
+        <a class="navbar-brand d-block d-lg-none" href="#">
+          <img src="../photos/Logo/logo.png" height="80" />
+        </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4 active" aria-current="page"
+                href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4" href="../pages/collection.html">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4" href="../pages/Comics.html">Comics</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link text-black mx-4" href="../index.html">
+                <img src="../photos/Logo/logo.png" height="80" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4" href="../pages/Team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4" href="../pages/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4" href="../pages/about.html">About</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
     <div class="row row-cols-1 d-flex justify-content-center">
-      <form action="mailto:danielmalede@gmail.com" class=" container px-md-5 col mt-5 text-center text-white" id="formContainer">
-        <h1 class="fw-light fs-3 pb-5 text-black">
-          Hey There!
-          <br><br>
-          WHY ARE YOU CONTACTING US TODAY?
-        </h1>
-        <select class="form-select text-black" aria-label="Default select example">
-          <option selected>Open this select menu</option>
-          <option value="1">i have an aditorial tip the Lets Talk Spec Team</option>
-          <option value="2">I want to pitch a story</option>
-          <option value="3">I have press inquiry</option>
-          <option value="3">I want to report asecurity issue with Lets Talk Spec</option>
-          <option value="3">I have a personal information request</option>
-        </select>
-        <br><br>
-        <div class="row mb-4 text-black">
-          <div class="col">
-            <div class="form-outline">
-              <label class="form-label" for="FirstNameUser">First name:</label>
-              <input type="text" id="FirstNameUser" class="form-control" />
+      <form action="mailto:danielmalede@gmail.com" class=" container px-md-5 col mt-5 text-center text-white"
+        id="formContainer">
+        <div class="container-md px-md-5">
+          <h1 class="fw-light fs-3 pb-5 text-black">
+            Hey There!
+            <br><br>
+            WHY ARE YOU CONTACTING US TODAY?
+          </h1>
+          <div class="container-md justify-content-center d-flex">
+            <div class="row row-cols-md-1">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                <select class="form-select text-black" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">i have an aditorial tip the Comics World</option>
+                  <option value="2">I want to pitch a story</option>
+                  <option value="3">I have press inquiry</option>
+                  <option value="3">I want to report asecurity issue with Comics World</option>
+                  <option value="3">I have a personal information request</option>
+                </select>
+                <br><br>
+                <div class="row mb-4 text-black">
+                  <div class="col">
+                    <div class="form-outline">
+                      <label class="form-label" for="FirstNameUser">First name:</label>
+                      <input type="text" id="FirstNameUser" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <label class="form-label" for="LastNameUser">Last name:</label>
+                      <input type="text" id="LastNameUser" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-outline mb-4 text-black">
+                  <label class="form-label" for="EmailUser">Email:</label>
+                  <input type="email" id="EmailUser" class="form-control" />
+                </div>
+                <div class="form-outline mb-4 text-black">
+                  <label class="form-label" for="form6Example7">Additional information:</label>
+                  <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mb-4 text-white">Click To Submit</button>
+                <div class="container flex-column justify-content-center text-center text-black pb-5 mb-md-5 ">
+                  <span class="fw-light fs-3">Always here for you
+                    <br>
+                    <b>Comics World</b> 
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-1"></div>
             </div>
           </div>
-          <div class="col">
-            <div class="form-outline">
-              <label class="form-label" for="LastNameUser">Last name:</label>
-              <input type="text" id="LastNameUser" class="form-control" />
-            </div>
-          </div>
         </div>
-        <div class="form-outline mb-4 text-black">
-          <label class="form-label" for="EmailUser">Email:</label>
-          <input type="email" id="EmailUser" class="form-control" />
-        </div>
-        <div class="form-outline mb-4 text-black">
-          <label class="form-label" for="form6Example7">Additional information:</label>
-          <textarea class="form-control" id="form6Example7" rows="4"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block mb-4 text-white">Click To Submit</button>
       </form>
     </div>
-    <div class="container flex-column justify-content-center text-center text-black pt-md-2 pb-md-5 ">
-      <h3 class="fw-light fs-3">Always here for you</h3>
-    </div>
   </div>
-  </form>
-  
+
   <footer class="text-center text-lg-start bg-black text-muted">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <div class="me-5 d-none d-lg-block">

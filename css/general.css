@@ -5,13 +5,16 @@ background-image: url(../photos/home/background.png);
     background-attachment: fixed;
 
 }
+#underLineNAV:hover{
+    border-bottom: solid 3.2px blue;
+}
+@media screen and (min-width:992px){
+    .nav-item {
+    line-height:80px;
+    }
+}
 
 @media screen and (min-width:580px) {
-    #carselaImg {
-        height: 87.5vh;
-        width: 100%;
-    }
-
     #logosIMG {
         height: 18vh;
         width: 40%;
@@ -23,16 +26,6 @@ background-image: url(../photos/home/background.png);
 }
 
 @media screen and (max-width:580px) {
-    #carselaImg {
-        height: 93vh;
-        width: 100%;
-    }
-
-    #dcVSmarvel {
-        height: 93vh;
-        width: 100%;
-    }
-
     #logosIMG {
         height: 15vh;
         width: 40%;

@@ -2,10 +2,15 @@ const API ='https://www.superheroapi.com/api.php/10217582256187832/search'
 const searchHEROES = document.getElementById("searchHEROES")
 async function getdetails() { 
     try {
+
+      lodingSpiderman.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/loadingGif.gif" alt="">`
        return  await fetch(`${API}/${searchHEROES.value}`).then(response => response.json())
-    } catch (error) {
+    } 
+    catch (error) {
+      loadingGif.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/dosentWork.gif" alt="">`
     }   
     finally{
+      lodingSpiderman.innerHTML = ""
         }
 }
 // getdetails().then(data=>console.log(data))

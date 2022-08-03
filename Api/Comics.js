@@ -7,11 +7,13 @@ async function getComics() {
         }
     };
     try {
-        loadingGif.innerHTML = `<img src="../photos/LoadingGif/Ripple-1s-200px.gif">`
+        loadingGif.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/loadingGif.gif" alt="">`
         let respo=await fetch('https://books39.p.rapidapi.com/CZFA4F/books', options)
        return respo.json();
         
     } catch (error) { 
+        loadingGif.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/dosentWork.gif" alt="">`
+
     }
     finally{
         loadingGif.innerHTML=""
