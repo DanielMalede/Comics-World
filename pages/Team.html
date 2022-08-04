@@ -15,7 +15,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="printusersinfo()">
     <div class="container-md bg-white text-center mt-md-5 pt-3">
         <nav class="navbar navbar-expand-lg navbar-collapse p-3 bg-white text-center" id="headerNav">
             <div class="container-fluid">
@@ -59,23 +59,19 @@
                 </div>
             </div>
         </nav>
-        <div id="loading"></div>
-        <div class="container bg-white">
-            <div class=" row justify-content-around" id="teamCard">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-10 col-xl-8 text-center">
-                      <h3 class="mb-4">Reviews</h3>
-                      <p class="mb-4 pb-2 mb-md-5 pb-md-0">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-                        numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
-                        quisquam eum porro a pariatur veniam.
-                      </p>
-                    </div>
-                  </div>
-
+        <div class="container bg-white pb-5">
+            <h3 class="mb-4 mt-5" >Reviews</h3>
+            <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+                quisquam eum porro a pariatur veniam.
+            </p>
+            <div class=" row row-cols-xl-3 row-cols-md-2 justify-content-around" id="teamCard">
             </div>
+            <div id="loadingReviews"></div>
         </div>
     </div>
+
 
 
     <footer class="text-center text-lg-start bg-black text-muted">

@@ -53,15 +53,33 @@ function printEachSuperHero() {
     
 }
 
-// async function sommee() {
-//   try {
-//     return await fetch(`https://comicvine.gamespot.com/api/characters/?api_key=82b9ea1c57ea97c73889c8b1c972beca415275c0&filter=publisher:marvel&limit=100&offset=0&format=json`)
-//     .then(response=>response.json())
-//   } catch (error) {
+async function sommee() {
+  try {
+    const encodedParams = new URLSearchParams();
+    encodedParams.append("apiSecret", "<REQUIRED>");
+    encodedParams.append("accessTokenSecret", "<REQUIRED>");
+    encodedParams.append("accessToken", "<REQUIRED>");
+    encodedParams.append("apiKey", "<REQUIRED>");
     
-//   }
-// }
-// console.log(sommee().then());
+    const options = {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+        'X-RapidAPI-Key': '893c074667msh97f09d6735f705ap123714jsne428339ccc11',
+        'X-RapidAPI-Host': 'GoodreadsraygorodskijV1.p.rapidapi.com'
+      },
+      body: encodedParams
+    };
+    
+    return await fetch('https://goodreadsraygorodskijv1.p.rapidapi.com/getAllRecentReviews', options)
+      .then(response => response.json())
+      .then(response => console.log(response))
+      .catch(err => console.error(err));
+  } catch (error) {
+    
+  }
+}
+console.log(sommee());
 
 
 
