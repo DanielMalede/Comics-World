@@ -14,21 +14,27 @@
   <link rel="stylesheet" href="./css/general.css">
   <title>Document</title>
 </head>
+
 <body>
-  <main class=" container-md mt-md-5">
+  <main class="container-md mt-md-5 px-0">
     <div class="row"></div>
-    <nav class="navbar navbar-expand-lg navbar-collapse p-3 bg-white text-center" id="headerNav">
+    <nav class="navbar navbar-expand-lg navbar-collapse p-0 bg-white text-center" id="headerNav">
       <div class="container-fluid">
         <a class="navbar-brand d-block d-lg-none" href="#">
           <img src="./photos/Logo/logo.png" height="80" />
         </a>
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto ">
             <li class="nav-item">
-              <a id="underLineNAV" class="nav-link text-black mx-4 active" aria-current="page" href=" /index.html">Home</a>
+              <div id="Weather"></div>
+            </li>
+            <li class="nav-item">
+              <a id="underLineNAV" class="nav-link text-black mx-4 active" aria-current="page"
+                href=" /index.html">Home</a>
             </li>
             <li class="nav-item">
               <a id="underLineNAV" class="nav-link text-black mx-4" href="./pages/collection.html">Collection</a>
@@ -49,6 +55,8 @@
             </li>
             <li class="nav-item">
               <a id="underLineNAV" class="nav-link text-black mx-4" href="./pages/about.html">About</a>
+            </li>
+            <li class="nav-item">
             </li>
           </ul>
         </div>
@@ -75,34 +83,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class=" bg-white justify-content-center">
-        <div id="trans1" class="col-md-6 col-sm-12 bg-dark text-center p-0 ">
-          <img class="col-12 img-fluid" src="./photos/home/allheroes.jpg" alt="">
-        </div>
-        <div class="col-md-6 col-sm-12 text-center fst-italic lead p-0 text-black">
-          <h1 class=" bg-gradient "><ins>Marvel Phase 5</ins></h1>
-          <br>
-
-          <b>
-            <p class="px-5">Marvel Studios officially announced its plans for Phases 5 and 6 of the MCU at San Diego
-              Comic-Con during its Hall H presentation on July 23. However, when looking at the studio's graphics
-              detailing everything on the way, nothing from the animated side of Marvel Studios was included.
-
-              The Phase 5 slate included 12 different live-action entries coming to both theaters and Disney+, starting
-              with Ant-Man and the Wasp: Quantumania in February 2023 and ending with Thunderbolts in July 2024.
-              However, what's missing from the lineup are Spider-Man: Freshman Year, X-Men '97, Marvel Zombies, or What
-              If...? Season 2, most of which are set to debut in the same window as Marvel Studios' Phase 5 projects.
-              The graphic also left off The Guardians of the Galaxy Holiday Special
-            </p>
-          </b>
-        </div>
-        <div>
-          <img class="img-fluid" src="./photos/home/comics.jpg" alt="">
-        </div>
-    </div>
-  </div>
     <div class="bg-danger text-center pt-5">
-      <h1 class="text-black pb-4"><i>News</i></h1>
+      <h1 class="text-black pb-4"><i>Comics World</i></h1>
       <div>
         <h2>
           What's the Difference Between Marvel and DC?
@@ -130,8 +112,8 @@
           Gotham City, Gateway and Metropolis are 3 examples.</p>
       </div>
       <div class="row justify-content-center">
-        <div class="card col-md-4" style="width: 18rem;">
-          <img src="./photos/home/dcnews.webp" class="card-img-top" alt="...">
+        <div class="articalCard card p-0 col-md-4" style="width: 18rem;">
+          <img src="./photos/home/dcnews.webp" class="card-img-top h-50" alt="...">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of
               the card's
@@ -154,15 +136,41 @@
           So, for lack of a better word, generally speaking, a fighting battle between rosters would probably be a
           draw
           in terms of power/ strength.</div>
-        <div class="card col-md-4" style="width: 18rem;">
-          <img src="./photos/home/marvelVSdc.jpg" class="card-img-top" alt="...">
+        <div class="articalCard card p-0 col-md-4" style="width: 18rem;">
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
           </div>
+          <img src="./photos/home/marvelVSdc.jpg" class="card-img-top h-50" alt="...">
         </div>
 
       </div>
+    </div>
+    <div class=" bg-white justify-content-center row mx-0">
+      <div id="trans1" class="col-md-6 col-sm-12 bg-dark text-center p-0 ">
+        <img class="col-12  img-fluid" src="./photos/home/allheroes.jpg" alt="">
+      </div>
+      <div class="col-md-6 col-sm-12 text-center fst-italic lead p-0 text-black">
+        <h1 class=" bg-gradient "><ins>Marvel Phase 5</ins></h1>
+        <br>
+
+        <b>
+          <p class="px-5">Marvel Studios officially announced its plans for Phases 5 and 6 of the MCU at San Diego
+            Comic-Con during its Hall H presentation on July 23. However, when looking at the studio's graphics
+            detailing everything on the way, nothing from the animated side of Marvel Studios was included.
+
+            The Phase 5 slate included 12 different live-action entries coming to both theaters and Disney+, starting
+            with Ant-Man and the Wasp: Quantumania in February 2023 and ending with Thunderbolts in July 2024.
+            However, what's missing from the lineup are Spider-Man: Freshman Year, X-Men '97, Marvel Zombies, or What
+            If...? Season 2, most of which are set to debut in the same window as Marvel Studios' Phase 5 projects.
+            The graphic also left off The Guardians of the Galaxy Holiday Special
+          </p>
+        </b>
+      </div>
+      <div>
+        <img class="img-fluid" src="./photos/home/comics.jpg" alt="">
+      </div>
+    </div>
     </div>
     </div>
 
@@ -289,6 +297,7 @@
       </div>
     </footer>
     <script src="./JS/main.js"></script>
+    <script src="./Api/Weather.js"></script>
 </body>
 
 </html>

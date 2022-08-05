@@ -1,15 +1,24 @@
+.body{
+  margin: 0;
+}
 @media (min-width: 576px) {
-  #carselaImg{
-    height: 30vh;
-  }
   #caruselaimg{
     height: 70vh;
   }
+}
+@media (max-width: 576px) {
+  #caruselaimg{
+    height: 50vh;
   }
+}
 a:hover{
   color: rgb(79, 236, 11);
 }
 a{
   color: rgb(146, 25, 25);
   text-decoration: none;
+}
+.articalCard{
+  background-color: transparent;
+  border-color: transparent;
 }
