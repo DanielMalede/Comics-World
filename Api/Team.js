@@ -11,6 +11,7 @@ async function getUsers() {
       loadingReviews.innerHTML = "";
     }
 }
+
 let counter = 45
 function printusersinfo() {
     getUsers().then((response) =>
@@ -42,10 +43,8 @@ function printusersinfo() {
           <i class="fas fa-star-half-alt fa-sm text-info"></i>
         </li>
       </ul>
-      <p class="mb-2">
-        <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat
-        ad velit ab hic tenetur.
+      <p id="reviewsApi" class="mb-2">
+      Some Text.....
       </p>
     </div>
   </div>

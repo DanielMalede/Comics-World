@@ -37,6 +37,24 @@ const imgComics = [
     `14.jpg`,
     `15.jpg`
 ]
+const urlComics = [
+    'https://comiconlinefree.net/batman-no-man-s-land/issue-1',
+    'https://comiconlinefree.net/van-helsing-50-anniversary-issue/issue-full/2',
+    'https://comiconlinefree.net/nightwing-old-friends-new-enemies/issue-tpb',
+    'https://comiconlinefree.net/superman-in-the-computer-masters-of-metropolis/issue-full',
+    'https://comiconlinefree.net/what-if-spider-man-2018/issue-full',
+    'https://comiconlinefree.net/hellboy-the-storm-and-the-fury/issue-tpb',
+    'https://comiconlinefree.net/batman-blackgate/issue-full',
+    'https://comiconlinefree.net/nocturne/issue-4',
+    'https://comiconlinefree.net/batman-no-man-s-land/issue-1',
+    'https://comiconlinefree.net/van-helsing-50-anniversary-issue/issue-full/2',
+    'https://comiconlinefree.net/nightwing-old-friends-new-enemies/issue-tpb',
+    'https://comiconlinefree.net/superman-in-the-computer-masters-of-metropolis/issue-full',
+    'https://comiconlinefree.net/what-if-spider-man-2018/issue-full',
+    'https://comiconlinefree.net/hellboy-the-storm-and-the-fury/issue-tpb',
+    'https://comiconlinefree.net/batman-blackgate/issue-full',
+    'https://comiconlinefree.net/nocturne/issue-4',
+]
 
 function printComics() {
 getComics().then((response)=>{
@@ -55,6 +73,7 @@ getComics().then((response)=>{
                 <p class="card-text">Publisher: ${response[i].PUBLISHER}</p>
                 <p class="card-text">Publisher City: ${response[i].PUBLISHER_CITY}</p>
                 <p class="card-text">Year: ${response[i].YEAR}</p>
+                <a target="_blank" href="${urlComics[i]}">For The Comics Click Here</a>
                 </div>
             </div>
         </div>
