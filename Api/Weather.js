@@ -7,10 +7,8 @@ async function getWeather() {
 
     }
     catch (err) {
-
     }
 }
-
 function printWeather() {
     getWeather().then(response => {
         for (const key in response) {
@@ -24,4 +22,3 @@ function printWeather() {
 
     })
 }
-printWeather()

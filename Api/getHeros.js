@@ -13,44 +13,40 @@ async function getdetails() {
       lodingSpiderman.innerHTML = ""
         }
 }
-// getdetails().then(data=>console.log(data))
-// console.log(getdetails());
 function printSuperHeroes() {
-    // console.log(API);
     getdetails().then((response)=>
     response.results.forEach(item => {
         supercard.innerHTML+=      
-`<div class="col wrapper d-flex align-items-center justify-content-center p-0 ">
-  <div class="card">
-    <div class="img-container position-relative w-100 h-100">
-        <img src="${item.image.url}"?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">          
-        <img src="${item.image.url}"?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-    </div>
-    <div class="box w-100 position-absolute d-flex align-items-center justify-content-center">
-        <div class="inner-content d-flex flex-column align-content-center justify-content-center">
-          <span>${item.name}</span>
-          <span>${item.work.occupation}</span>
-          <span> Base: ${item.work.base}.</span>
-          <h2>PowerState</h2>
-          <span>Combat : ${item.powerstats.combat}</span>
-          <span>durability : ${item.powerstats.durability}</span>
-          <span>intelligence : ${item.powerstats.intelligence}</span>
-          <span>power : ${item.powerstats.power}</span>
-          <span>speed : ${item.powerstats.speed}</span>
-          <span>strength : ${item.powerstats.strength}</span>
-        </div>
-    </div>
-  </div>
-</div>`
+          `
+          <div class="col wrapper d-flex align-items-center justify-content-center p-0 ">
+            <div class="card">
+              <div class="img-container position-relative w-100 h-100">
+                  <img src="${item.image.url}"?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">          
+                  <img src="${item.image.url}"?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+              <div class="box w-100 position-absolute d-flex align-items-center justify-content-center">
+                  <div class="inner-content d-flex flex-column align-content-center justify-content-center">
+                    <span>${item.name}</span>
+                    <span>${item.work.occupation}</span>
+                    <span> Base: ${item.work.base}.</span>
+                    <h2>PowerState</h2>
+                    <span>Combat : ${item.powerstats.combat}</span>
+                    <span>durability : ${item.powerstats.durability}</span>
+                    <span>intelligence : ${item.powerstats.intelligence}</span>
+                    <span>power : ${item.powerstats.power}</span>
+                    <span>speed : ${item.powerstats.speed}</span>
+                    <span>strength : ${item.powerstats.strength}</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          `
     })
     )
 }
-// printSuperHeroes()
-
 function printEachSuperHero() {
   supercard.innerHTML= ""
-    printSuperHeroes()
-    
+    printSuperHeroes()   
 }
 
 
