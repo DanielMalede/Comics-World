@@ -12,46 +12,55 @@ async function getUsers() {
     }
 }
 
-let counter = 45
+let counter = 11
 function printusersinfo() {
     getUsers().then((response) =>
         response.forEach((item) => {
             teamCard.innerHTML += `
-<div class=" text-center mt-5">
-<div class="col">
-  <div class="cardReviews card">
-    <div class=" card-body py-4 mt-2">
-      <div class="d-flex justify-content-center mb-4">
-        <img src="https://randomuser.me/api/portraits/med/men/${counter++}.jpg"
-          class="rounded-circle shadow-1-strong" width="100" height="100" />
-      </div>
-      <h5 class="font-weight-bold">- ${item.name.first} ${item.name.last}</h5>
-      <ul class="list-unstyled d-flex justify-content-center">
-        <li>
-          <i class="fas fa-star fa-sm text-info"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-info"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-info"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-info"></i>
-        </li>
-        <li>
-          <i class="fas fa-star-half-alt fa-sm text-info"></i>
-        </li>
-      </ul>
-      <p id="reviewsApi" class="mb-2">
-      Some Text.....
-      </p>
-    </div>
+
+
+<div class="col mb-5 mt-5 d-flex align-items-stretch">
+<div class="card testimonial-card">
+  <div class="card-up" style="background-color: #9d789b;"></div>
+  <div class="avatar mx-auto bg-white">
+    <img src="https://randomuser.me/api/portraits/med/men/${counter++}.jpg"
+      class="rounded-circle img-fluid" />
   </div>
+  <div class="card-body">
+    <h4 class="mb-4">- ${item.name.first} ${item.name.last}</h4>
+    <hr />
+    <p class="dark-grey-text mt-4">
+      <i id="reviewsRandom" class="fas fa-quote-left pe-2"></i>Lorem ipl;mdfklmbkldfmklbmdpv svpsmvp lkpmdfp mdpmvp kmepkmepsum dolor sit amet eos adipisci,
+      consectetur adipisicing elit.
+    </p>
+  </div>
+</div>
 </div>
 `;
         })
     );
+}
+
+async function getreviews() {
+  try {
+    return await fetch('https://app.reviewapi.io/api/v1/reviews?apikey=8afe1c50-157f-11ed-992a-6720d73ba6af&url=https%3A%2F%2Fwww.capterra.com%2Fp%2F140650%2FRecruitee&amount=15')
+      .then(response => response.json())
+      .then(response => console.log(response))
+      .catch(err => console.error(err));
+  } catch (error) {
+    
+  }
+}
+getreviews()
+getreviews(); 
+ function printReviews() {
+  getreviews().then(response=>
+      response.reviews.forEach(item => {
+        reviewsRandom+=
+        `
+        ${item}
+        `
+      }))
 }
 
 
