@@ -19,6 +19,5 @@ function printWeather() {
                 <b>${weather.slice(0, 2)}</b> ℃
                 `
         }
-
     })
 }
