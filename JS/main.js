@@ -7,6 +7,5 @@ async function getNewsApi() {
         
     }
 }
-console.log(getNewsApi()); 
 
 
