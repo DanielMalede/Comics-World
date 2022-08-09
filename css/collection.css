@@ -10,11 +10,12 @@ body{
 }
 .wrapper{
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
+    
 }
 .wrapper .card{
     width: 300px;
-    height: 300px;
+    height: 400px;
     border: none;
     box-shadow: 10px 10px 15px #1f1f1f1a,
                 -10px -10px 15px #1f1f1f1a;
@@ -22,10 +23,13 @@ body{
     transform: perspective(1000px);
     transition: all 0.9s;
     border-radius: 0px;
+    
 }
 .wrapper .card:hover{
     transform: translateY(50%);
     border: none;
+    z-index: 2;
+
 }
 .wrapper .card .img-container{
     z-index: 1;
@@ -38,6 +42,7 @@ body{
 }
 .wrapper .card:hover .img-container{
     transform: rotateX(180deg);
+    z-index: 2;
 }
 .wrapper .card .img-container img{
     width: 100%;
@@ -48,6 +53,7 @@ body{
     left: 0;
     transform-style: preserve-3d;
     backface-visibility: hidden;
+    
 }
 .wrapper .card .img-container img:nth-child(2){
     transform: rotateX(-180deg);
@@ -57,10 +63,12 @@ body{
     top: 0;
     left: 0;
     pointer-events: none;
+
 }
 .wrapper .card .box .inner-content .tag{
     font-size: 0.87rem;
     letter-spacing: 1px;
+    
 }
 @media (max-width:330px) {
     .wrapper .card{

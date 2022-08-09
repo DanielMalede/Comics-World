@@ -1,15 +1,29 @@
 async function getreviews() {
   try {
-    return await fetch('https://app.reviewapi.io/api/v1/reviews?apikey=8afe1c50-157f-11ed-992a-6720d73ba6af&url=https%3A%2F%2Fwww.capterra.com%2Fp%2F140650%2FRecruitee&amount=15')
+    return await fetch('https://app.reviewapi.io/api/v1/reviews?apikey=b7200750-17f9-11ed-a6b8-7bb18d600c95&url=https%3A%2F%2Fwww.healthgrades.com%2Fdentist%2Fdr-alexander-milman-yvqbl&amount=12')
       .then(response => response.json())
-      .then(response => console.log(response))
+      // .then(response => console.log(response))
       .catch(err => console.error(err));
   } catch (error) {
   }
 }
-function printReviews() {
-  getreviews().then(response =>
-    response.reviews.forEach(item => {
+// console.log(getreviews());
 
-    }))
+
+function printReview(){
+  getreviews()
+    .then(item=>{
+     item.reviews.forEach(element => {
+        console.log(element.text);
+        
+     });
+    })
 }
+// printReview()
+
+
+// console.log(printReviews());
+// response.reviews.forEach(item => {
+//   console.log(item.reviews.text);
+
+// })
