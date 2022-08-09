@@ -7,12 +7,12 @@ async function getreviews() {
   } catch (error) {
   }
 }
-function printReview(){
+function printReview() {
   getreviews()
-    .then(item=>{
-     item.reviews.forEach(element => {
+    .then(item => {
+      item.reviews.forEach(element => {
         console.log(element.text);
-        
-     });
+
+      });
     })
 }

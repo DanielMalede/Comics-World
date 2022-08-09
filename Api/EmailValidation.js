@@ -25,9 +25,9 @@ async function reactionToEmailValidation() {
 }
 function actionOfPrintingUser() {
     return (
-        window.location.href = "mailto:" +('danielmalede@gmail.com')
+        window.location.href = "mailto:" + ('danielmalede@gmail.com')
 
-        )
+    )
 }
 async function printingUserPage() {
     let check = await reactionToEmailValidation()

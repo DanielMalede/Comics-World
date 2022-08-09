@@ -34,7 +34,7 @@ const Reviews = [
   section  right in the middle of the screen  because it is obvious, and
   all important information can be accessed by the reader easily.`,
 
-    `The two color  scheme is good but try adding  one or two more  colors.
+  `The two color  scheme is good but try adding  one or two more  colors.
   Orange/yellow  and blue go well  together, and the purple color of the
   accessed links is nice.  Maybe a turquoise  color  somewhere  would be
   good.  The  content  flows very well and is well  written.  All of the
@@ -44,10 +44,10 @@ const Reviews = [
   you need on the front page is some interesting  information to get the
   viewer in.`,
 
-    `The design is very  consistent  throughout all of the pages- clean and
+  `The design is very  consistent  throughout all of the pages- clean and
   easy to read.  Well done!`,
 
-    `The load time of the page is quite  fast,  even with the  moving  link
+  `The load time of the page is quite  fast,  even with the  moving  link
   buttons.  I did not find any typos or broken  links,  just  very  well
   written  information!  There are  sufficient  meta tags on the  pages.
   The  CharityFocus  logo is present on the main page but not on the sub
@@ -102,7 +102,7 @@ const Reviews = [
 ]
 function printusersinfo() {
   getUsers().then((response) =>
-    response.forEach((item,index) => {
+    response.forEach((item, index) => {
       teamCard.innerHTML += `
             <div class="col mb-5 mt-5 d-flex align-items-stretch">
               <div class="card testimonial-card">
