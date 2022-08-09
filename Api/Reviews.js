@@ -7,9 +7,6 @@ async function getreviews() {
   } catch (error) {
   }
 }
-// console.log(getreviews());
-
-
 function printReview(){
   getreviews()
     .then(item=>{
@@ -19,11 +16,3 @@ function printReview(){
      });
     })
 }
-// printReview()
-
-
-// console.log(printReviews());
-// response.reviews.forEach(item => {
-//   console.log(item.reviews.text);
-
-// })
