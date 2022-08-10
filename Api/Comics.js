@@ -19,7 +19,7 @@ async function getComics() {
         loadingGif.innerHTML = ""
     }
 }
-console.log(getComics());
+// console.log(getComics());
 const imgComics = [
     `1.jpg`,
     `2.jpg`,
