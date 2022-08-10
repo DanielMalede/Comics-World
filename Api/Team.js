@@ -108,7 +108,7 @@ function printusersinfo() {
               <div class="card testimonial-card">
                 <div class="card-up" style="background-color: #9d789b;"></div>
                   <div class="avatar mx-auto bg-white">
-                    <img src="https://randomuser.me/api/portraits/med/men/${counter++}.jpg"class="rounded-circle img-fluid" />
+                    <img src="https://randomuser.me/api/portraits/med/men/${counter++}.jpg"class="rounded-circle pt-5 img-fluid" />
                   </div>
                 <div class="card-body">
                   <h4 class="mb-4">- ${item.name.first} ${item.name.last}</h4>
