@@ -34,6 +34,6 @@ async function printingUserPage() {
     if (check == true) {
         return actionOfPrintingUser()
     }
-    else { return alert("email isn't valid") }
+    else { return alert("Invalid Email") }
 }
 email_valid_btn.addEventListener("click", () => { printingUserPage() })
