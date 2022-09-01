@@ -80,25 +80,6 @@ const Reviews = [
   links in text form at the  bottom of the page.  Other  than  that, the
   navigation is perfect!`,
 
-  `The color scheme is effective  but should be used more around the site
-  so you can show it off and also liven up the site.  The content  flows
-  well because  everything  is in the  appropriate  place and it is very
-  easy to read- the less huge chunks of text, the better!  The design is
-  very  consistent-  the simple yellow, green and black is used on every
-  page on the left, and the font size and face are the same  throughout.
-  Well done!`,
-
-  `The site loads  extremely fast because the only graphics are the small
-  welcome logo and the link  buttons.  Fast load time is always a 'great
-  site  factor'.  I have read  through the whole site and I did not find
-  any spelling or typing errors  except one on the main page:  "and peer
-  threatment  advocacy" you should remove the H in  'treatment'.  I have
-  checked all of the hyperlinks and all of them are working fine.`,
-
-  `There are no meta  tags, so that  needs to be fixed.  The main page is
-  linked to CharityFocus, but there is no logo.  All in all this site is
-  very informative and easy to navigate, but the  presentation  needs to
-  be worked on and there are a few little glitches.  But very well done!`,
 ]
 function printusersinfo() {
   getUsers().then((response) =>

@@ -9,7 +9,7 @@ async function getreviews() {
 }
 function printReview() {
   getreviews()
-    .then(item => {
+    ..then(item => {
       item.reviews.forEach(element => {
         console.log(element.text);
 

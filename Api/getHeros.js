@@ -4,7 +4,7 @@ async function getdetails() {
     try {
 
       lodingSpiderman.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/loadingGif.gif" alt="">`
-       return  await fetch(`${API}/${searchHEROES.value}`).then(response => response.json())
+       return  await feetch(`${API}/${searchHEROES.value}`).then(response => response.json())
     } 
     catch (error) {
       loadingGif.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/dosentWork.gif" alt="">`

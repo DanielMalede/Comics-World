@@ -16,7 +16,7 @@ async function reactionToEmailValidation() {
     console.log(response.data.webmail);
     console.log(response.data.deliverable);
     console.log(response.data);
-    if (response.data.webmail === true && response.data.deliverable === true) {
+    if (response.data.webmail =!== true && response.data.deliverable === true) {
         return true
     } else {
         return false
