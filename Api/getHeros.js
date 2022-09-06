@@ -1,23 +1,21 @@
-const API ='https://www.superheroapi.com/api.php/10217582256187832/search'
-const searchHEROES = document.getElementById("searchHEROES")
-async function getdetails() { 
-    try {
-
-      lodingSpiderman.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/loadingGif.gif" alt="">`
-       return  await fetch(`${API}/${searchHEROES.value}`).then(response => response.json())
-    } 
-    catch (error) {
-      loadingGif.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/dosentWork.gif" alt="">`
-    }   
-    finally{
-      lodingSpiderman.innerHTML = ""
-        }
+const API = "https://www.superheroapi.com/api.php/10217582256187832/search";
+const searchHEROES = document.getElementById("searchHEROES");
+async function getdetails() {
+  try {
+    lodingSpiderman.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/loadingGif.gif" alt="">`;
+    return await fetch(`${API}/${searchHEROES.value}`).then((response) =>
+      response.json()
+    );
+  } catch (error) {
+    loadingGif.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/dosentWork.gif" alt="">`;
+  } finally {
+    lodingSpiderman.innerHTML = "";
+  }
 }
 function printSuperHeroes() {
-    getdetails().then((response)=>
-    response.results.forEach(item => {
-        supercard.innerHTML+=      
-          `
+  getdetails().then((response) =>
+    response.results.forEach((item) => {
+      supercard.innerHTML += `
           <div class="col wrapper d-flex align-items-center justify-content-center p-0 ">
             <div class="card">
               <div class="img-container position-relative w-100 h-100">
@@ -40,45 +38,14 @@ function printSuperHeroes() {
               </div>
             </div>
           </div>
-          `
+          `;
     })
-    )
+  );
 }
 function printEachSuperHero() {
-  supercard.innerHTML= ""
-    printSuperHeroes()   
+  supercard.innerHTML = "";
+  printSuperHeroes();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const encodedParams = new URLSearchParams();
 // encodedParams.append("publicKey", "<REQUIRED>");
@@ -95,17 +62,17 @@ function printEachSuperHero() {
 //     body: encodedParams
 // };
 // async function get() {
-    
+
 //     try {
 //         return await
-        
+
 //         fetch('https://marvelstefan-skliarovv1.p.rapidapi.com/getComicsByEvent', options)
 //             .then(response => response.json())
 //             .then(response => console.log(response))
 //             .catch(err => console.error(err));
-        
+
 //     } catch (error) {
-        
+
 //     }
 // }
 // get()
