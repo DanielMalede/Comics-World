@@ -1,17 +1,17 @@
 const API = `https://my-json-server.typicode.com/Jeck99/fake-server/users`;
 const testAPI = `https://app.reviewapi.io/api/v1/reviews?apikey=590557d0-1362-11ed-8a16-6fb669d00464&url=https%3A%2F%2Fwww.capterra.com%2Fp%2F140650%2FRecruitee&amount=15
-`
+`;
 let teamCard = document.getElementById("teamCard");
 async function getUsers() {
   try {
-    loadingReviews.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/loadingGif.gif" alt="">`
+    loadingReviews.innerHTML = `<img class="img-fluid" src="../photos/LoadingGif/loadingGif.gif" alt="">`;
     return await fetch(API).then((response) => response.json());
   } catch (error) {
   } finally {
     loadingReviews.innerHTML = "";
   }
 }
-let counter = 11
+let counter = 11;
 const Reviews = [
   `This site definitely  appeals to the average person because the layout
   is so  simple  but very  VERY  effective.  It is a clean  site  with a
@@ -99,7 +99,7 @@ const Reviews = [
   linked to CharityFocus, but there is no logo.  All in all this site is
   very informative and easy to navigate, but the  presentation  needs to
   be worked on and there are a few little glitches.  But very well done!`,
-]
+];
 function printusersinfo() {
   getUsers().then((response) =>
     response.forEach((item, index) => {
@@ -114,7 +114,9 @@ function printusersinfo() {
                   <h4 class="mb-4">- ${item.name.first} ${item.name.last}</h4>
                   <hr />
                   <p class="dark-grey-text mt-4">
-                    <i id="reviewsRandom" class="fas fa-quote-left pe-2"></i>${Reviews[index]}</p>
+                    <i id="reviewsRandom" class="fas fa-quote-left pe-2"></i>${
+                      Reviews[index]
+                    }</p>
                 </div>
               </div>
             </div>
@@ -124,20 +126,20 @@ function printusersinfo() {
 }
 async function getreviews() {
   try {
-    return await fetch('https://app.reviewapi.io/api/v1/reviews?apikey=8afe1c50-157f-11ed-992a-6720d73ba6af&url=https%3A%2F%2Fwww.capterra.com%2Fp%2F140650%2FRecruitee&amount=15')
-      .then(response => response.json())
-      .then(response => console.log(response))
-      .catch(err => console.error(err));
-  } catch (error) {
-  }
+    return await fetch(
+      "https://app.reviewapi.io/api/v1/reviews?apikey=8afe1c50-157f-11ed-992a-6720d73ba6af&url=https%3A%2F%2Fwww.capterra.com%2Fp%2F140650%2FRecruitee&amount=15"
+    )
+      .then((response) => response.json())
+      .then((response) => console.log(response))
+      .catch((err) => console.error(err));
+  } catch (error) {}
 }
 function printReviews() {
-  getreviews().then(response =>
-    response.reviews.forEach(item => {
-      reviewsRandom +=
-        `
+  getreviews().then((response) =>
+    response.reviews.forEach((item) => {
+      reviewsRandom += `
         ${item}
-        `
-    }))
+        `;
+    })
+  );
 }
-
